@@ -23,6 +23,7 @@ class CustomText(models.Model):
 
 class HomePage(models.Model):
     body = models.TextField()
+    tests = models.BigIntegerField(null=True, blank=True,)
 
     @property
     def api(self):
@@ -34,5 +35,10 @@ class HomePage(models.Model):
 
 
 class Test(models.Model):
+    "Generated Model"
+    tests = models.BigIntegerField()
+
+
+class Demo(models.Model):
     "Generated Model"
     tests = models.BigIntegerField()
