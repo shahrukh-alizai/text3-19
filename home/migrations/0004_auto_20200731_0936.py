@@ -6,20 +6,28 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0003_test'),
+        ("home", "0003_test"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Demo',
+            name="Demo",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('tests', models.BigIntegerField()),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("tests", models.BigIntegerField()),
             ],
         ),
         migrations.AddField(
-            model_name='homepage',
-            name='tests',
+            model_name="homepage",
+            name="tests",
             field=models.BigIntegerField(blank=True, null=True),
         ),
     ]

@@ -42,3 +42,8 @@ class Test(models.Model):
 class Demo(models.Model):
     "Generated Model"
     tests = models.BigIntegerField()
+
+
+class Std(models.Model):
+    "Generated Model"
+    test = models.BigIntegerField()
